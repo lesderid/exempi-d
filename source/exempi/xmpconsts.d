@@ -41,23 +41,25 @@ module exempi.xmpconsts;
 
 extern(C):
 
-extern __gshared const char[] NS_XMP_META;
-extern __gshared const char[] NS_RDF;
-extern __gshared const char[] NS_EXIF;
-extern __gshared const char[] NS_TIFF;
-extern __gshared const char[] NS_XAP;
-extern __gshared const char[] NS_XAP_RIGHTS;
-extern __gshared const char[] NS_DC;
-extern __gshared const char[] NS_EXIF_AUX;
-extern __gshared const char[] NS_CRS;
-extern __gshared const char[] NS_LIGHTROOM;
-extern __gshared const char[] NS_PHOTOSHOP;
-extern __gshared const char[] NS_CAMERA_RAW_SETTINGS;
-extern __gshared const char[] NS_CAMERA_RAW_SAVED_SETTINGS;
-extern __gshared const char[] NS_IPTC4XMP;
-extern __gshared const char[] NS_TPG;
-extern __gshared const char[] NS_DIMENSIONS_TYPE;
+//HACK: Should use a proper translation for 'extern const char CONSTANT_NAME[];'
+
+extern __gshared const char[64] NS_XMP_META;
+extern __gshared const char[64] NS_RDF;
+extern __gshared const char[64] NS_EXIF;
+extern __gshared const char[64] NS_TIFF;
+extern __gshared const char[64] NS_XAP;
+extern __gshared const char[64] NS_XAP_RIGHTS;
+extern __gshared const char[64] NS_DC;
+extern __gshared const char[64] NS_EXIF_AUX;
+extern __gshared const char[64] NS_CRS;
+extern __gshared const char[64] NS_LIGHTROOM;
+extern __gshared const char[64] NS_PHOTOSHOP;
+extern __gshared const char[64] NS_CAMERA_RAW_SETTINGS;
+extern __gshared const char[64] NS_CAMERA_RAW_SAVED_SETTINGS;
+extern __gshared const char[64] NS_IPTC4XMP;
+extern __gshared const char[64] NS_TPG;
+extern __gshared const char[64] NS_DIMENSIONS_TYPE;
 /** Creative Commons namespace */
-extern __gshared const char[] NS_CC;
+extern __gshared const char[64] NS_CC;
 /* Added in Exempi 2.1 */
-extern __gshared const char[] NS_PDF;
+extern __gshared const char[64] NS_PDF;
