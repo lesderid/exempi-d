@@ -3,3 +3,14 @@ description "D bindings for exempi"
 authors "Les De Ridder"
 license "BSD 3-clause"
 targetType "library"
+libs "exempi"
+
+configuration "library" {
+	sourcePaths "source"
+	importPaths "source"
+}
+
+configuration "unittest" {
+	sourcePaths "tests"
+	importPaths "source" "tests"
+}
